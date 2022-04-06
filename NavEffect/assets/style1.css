@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+}
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul li{
+    position: relative;
+    list-style: none;
+}
+ul li a{    
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+}
+ul li a.active{
+    
+}

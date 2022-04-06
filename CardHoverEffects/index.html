@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Card Hover Effects</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Card One</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum aperiam vitae nesciunt adipisci cupiditate
+                        molestiae dicta eveniet, harum consectetur officia
+                        similique,
+                        aliquid at necessitatibus nostrum animi asperiores nam
+                        sint porro!</p> -->
+                        <img src="https://anhdepblog.com/wp-content/uploads/2020/09/hinh-nen-3D-cho-dien-thoai-lung-linh-16.jpg" alt="">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Card Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum aperiam vitae nesciunt adipisci cupiditate
+                        molestiae
+                        dicta eveniet, harum consectetur officia similique,
+                        aliquid at necessitatibus nostrum animi asperiores nam
+                        sint
+                        porro!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Card Three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum aperiam vitae nesciunt adipisci cupiditate
+                        molestiae
+                        dicta eveniet, harum consectetur officia similique,
+                        aliquid at necessitatibus nostrum animi asperiores nam
+                        sint
+                        porro!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                'max-glare': 1,
+            });
+        </script>
+    </body>
+</html>

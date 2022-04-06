@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Ripple</title> 
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #222;
+        }
+        a{
+            position: relative;
+            margin-bottom: 50px;
+            padding: 30px 90px;
+            text-decoration: none;
+            background: linear-gradient(90deg, lightblue, blue);
+            border-radius: 50px;
+            font-size: 30px;
+            color: orange;
+            font-family: monospace;
+            overflow: hidden;
+        }
+        span{
+            position: absolute;
+            width: 60px;
+            background: rgba(13, 243, 13, 0.5);
+            height: 60px;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            animation: animation .4s linear infinite;
+        }
+        @keyframes animation {
+            0%{
+                width: 0px;
+                height: 0px;
+            }
+            100%{
+                width: 600px;
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Button</a>
+    <a href="#">Button</a>
+
+    <script type="text/javascript">
+        const buttons = document.querySelectorAll('a')
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function(e){
+                let x = e.clientX - e.target.offsetLeft
+                let y = e.clientY - e.target.offsetTop
+
+                let ripples = document.createElement('span')
+                ripples.style.left = x+'px';
+                ripples.style.top = y+'px';
+
+                this.appendChild(ripples);
+
+                setTimeout(() => {
+                    ripples.remove()
+                }, 400);
+            })
+        });
+    </script>
+</body>
+</html>

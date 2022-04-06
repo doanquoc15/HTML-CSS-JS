@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(230, 14, 165), #e68cba);
+    position: relative;
+}
+
+#content {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    background: #e68cba;
+}
+
+#content .item {
+    position: absolute;
+    width: 380px;
+    height: 500px;
+    background: #000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+#content #welcome {
+    transition: 0.4s;
+
+}
+
+#content #start {
+    z-index: -1;
+}
+
+.text{
+    color : white;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ 
+#content #welcome .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+#content #welcome .circle ion-icon {
+    font-size: 60px;
+    color: white;
+    /* filter: drop-shadow(0px 0px 10px aqua) drop-shadow(0px 0px 20px aqua); */
+    transition: 0.4s;
+}
+
+/* Xong phan welcome */
+
+#content #start {
+    position: absolute;
+    overflow: hidden;
+}
+
+#content #start .back {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+#content #start textarea {
+    display: block;
+    width: 90%;
+    height: 340px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border : none;
+    outline : none;
+    padding: 20px;
+    border : 3px solid rgb(135, 122, 122);
+    background : transparent;
+    color : white;
+    resize : none;
+}
+
+#content #start .get-voice{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 0px auto;
+    margin-top: 30px;
+    background : rgb(12, 120, 12);
+    color: white;
+    border: none;
+    outline : none;
+    letter-spacing : 2px;
+}
+.active{
+    transform: scale(0.9);
+    transition: all 0.1s;
+}

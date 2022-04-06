@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Speech To Text</title>
+</head>
+<body>
+    <div id="content">
+        <div id="welcome" class="item">
+            <div class="circle">
+                <ion-icon name="mic"></ion-icon>
+            </div>
+            <p class="text">.....</p>
+        </div>
+        <div id="start" class="item">
+            <div class="back">
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            </div>
+
+            <textarea name="input" id="input"></textarea>
+            <button class="get-voice">Convert</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
